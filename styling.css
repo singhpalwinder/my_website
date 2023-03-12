@@ -1,0 +1,14 @@
+html, body {
+    background-color: #313638;
+    height: 100%;
+    width:100%;
+    margin:0;
+}
+body{
+    display:flex;
+}
+form{
+    margin:auto;
+}
+    
+
