@@ -22,13 +22,27 @@ html,body {
 .img:hover{
     opacity:1;
 }
+<<<<<<< HEAD
 .links
+=======
+.socials
+>>>>>>> da808c7 (Committing all my local changes)
 {
     display:flex;
     flex-direction: row;
     margin:5%;
     gap:2em;
 }
+<<<<<<< HEAD
+=======
+.links
+{
+    display:flex;
+    flex-direction: column;
+    margin:5%;
+    gap:2em;
+}
+>>>>>>> da808c7 (Committing all my local changes)
 .icon
 {
     display:flex;
@@ -36,6 +50,10 @@ html,body {
     opacity:.6;
     
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> da808c7 (Committing all my local changes)
 .icon:hover{
     opacity:1;
 }
