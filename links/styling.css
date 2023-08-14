@@ -1,6 +1,8 @@
 html,body {
     background-color: #313638;
-    margin:auto;
+    height:100%;
+    margin:0;
+    
     
 }
 .container{
@@ -8,9 +10,12 @@ html,body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
 }
 .img {
-    margin-top: 4%;
+
     display:block;
     margin-left: auto;
     margin-right:auto;
@@ -22,19 +27,13 @@ html,body {
 .img:hover{
     opacity:1;
 }
-<<<<<<< HEAD
-.links
-=======
 .socials
->>>>>>> da808c7 (Committing all my local changes)
 {
     display:flex;
     flex-direction: row;
     margin:5%;
     gap:2em;
 }
-<<<<<<< HEAD
-=======
 .links
 {
     display:flex;
@@ -42,7 +41,6 @@ html,body {
     margin:5%;
     gap:2em;
 }
->>>>>>> da808c7 (Committing all my local changes)
 .icon
 {
     display:flex;
@@ -50,10 +48,6 @@ html,body {
     opacity:.6;
     
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> da808c7 (Committing all my local changes)
 .icon:hover{
     opacity:1;
 }
