@@ -10,7 +10,10 @@
 
           <div>
             <a href = "https://www.singhpalwinder.com"><img class="pfp" src = "pfp.png" alt = "Profile picture"></a>
+            <a class="handle" href="https://www.singhpalwinder.com/links">@_singhpalwinder</a>
           </div>
+
+          
 
           <div class = "socials">
             <div  class="icon">
