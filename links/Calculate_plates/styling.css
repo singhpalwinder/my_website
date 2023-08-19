@@ -2,7 +2,7 @@ html,body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #07041E;
+    background-color: #122D39;
     color: white;
     height:100%;
     margin:0;
@@ -11,4 +11,70 @@ html,body {
     align-items: center;
     justify-content: center;
 }
+/* Default bullet style */
+ul {
+    list-style: none;
+    line-height: 1.5em;
+    padding-left: 0;
+    gap: 8em;
+}
+/* Bullet styles based on plate weights */
+li.plate-25::before {
+    content: "●";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+li.plate-20::before {
+    content: "●";
+    color: blue;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+li.plate-15::before {
+    content: "●";
+    color: yellow;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+li.plate-10::before {
+    content: "●";
+    color: green;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+li.plate-5::before {
+    content: "●";
+    color: white;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+li.plate-2_5::before {
+    content: "●";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+li.plate-1_25::before {
+    content: "●";
+    color: silver; /* Or blue depending on your preference */
+    display: inline-block;
+    width: 1em;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
 
