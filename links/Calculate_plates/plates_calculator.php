@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
 </head>
 <body>
     <form action="plates_calculator.php" method="post">
-        Enter weight in lbs: <input type="number" step="0.01" name="weight_in_lbs">
+        Enter weight in lbs: <input type="number" step="0.01" name="weight_in_lbs" autofocus>
         <input type="submit" value="Calculate">
     </form>
 
