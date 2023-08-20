@@ -23,7 +23,7 @@ html,body {
 .handle{
     color: #EF6461;
     text-decoration: none;
-    font-size:150%;
+    font-size:160%;
 }
 .pfp {
 
@@ -33,6 +33,7 @@ html,body {
     width:160px;
     height:160px;
     border-radius: 50%;
+    margin-bottom: .5em;
 }
 .icon
 {
@@ -52,35 +53,43 @@ html,body {
     align-items: center;  /* This will ensure the children (links and socials) are centered */
     width:2vw;
 }
-.socials {
+footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     grid-gap: 5vw; 
     max-width: 80vw;
     justify-content: center;
     align-items: center;
-    margin-bottom:2em;
+    margin-top: 3em;
+    margin-bottom:2vw;
 }
-
-.links
-{
+.links{
     display:flex;
     flex-direction: column;
     gap:2em;
+    width: 80vw;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(9px);
+    padding: 2em; 
+    border-radius: 20px; 
+    width: 70vw;  /* set the width of the container */
+    align-items: center;  /* center the buttons */
+
 }
 a
 {
     color: #EF6461;
     text-decoration: none;
-    font-size:8vw;
+    font-size:7vw;
 
 }
 .button{
     display:flex;
     padding:20px;
-    border:5px solid;
-    width:80vw;
-    height: 30px;
+    border:4px solid;
+    width:60vw;
+    height: 15px;
     opacity: .8;
     align-items: center;
     justify-content: center;
