@@ -45,7 +45,7 @@
                   <a class = "button" href = "20wk_powerbuilding.numbers">Free Workout Plan</a>
                 </div>
                 <div>
-                  <a class = "button" href = "../fitnessCalculate_plates/plates_calculator.php">Weight Calculator</a>
+                  <a class = "button" href = "../fitness/Calculate_plates/plates_calculator.php">Weight Calculator</a>
                 </div>
             </div>
 
