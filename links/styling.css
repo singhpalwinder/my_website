@@ -79,7 +79,8 @@ a
     padding: 10px; /* Increase horizontal padding, and maintain vertical padding */
     border: none; 
     background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(6px); 
+    backdrop-filter: blur(7px); 
+    -webkit-backdrop-filter: blur(7px); /* For Safari */
     width: 85vw;/* It will take as much width as the content requires */
     transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
     justify-content: flex-start; 
@@ -105,7 +106,6 @@ a
     object-fit: cover;
     border-radius: 50%; /* To keep rounded corners */
     opacity:1;
-
 }
 .button-text {
     text-align: center;
