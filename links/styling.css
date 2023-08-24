@@ -6,8 +6,6 @@ html,body {
     background-color: #313638;
     height:100%;
     margin:0;
-    
-    
 }
 
 .container{
@@ -18,15 +16,20 @@ html,body {
     height:100%;
     width:100%;
     box-sizing: border-box;
-    gap:2em;
+    gap:3em;
+    color:#EF6461;
+    font-size: .6em;
 }
-.handle{
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This will ensure the children (links and socials) are centered */
     color: #EF6461;
     text-decoration: none;
-    font-size:150%;
+    font-size:100%;
+    gap:1.8em;
 }
-.pfp {
-
+header img {
     display:block;
     margin-left: auto;
     margin-right:auto;
@@ -34,15 +37,17 @@ html,body {
     height:160px;
     border-radius: 50%;
 }
+.material-symbols-outlined {
+    vertical-align: baseline; /* This ensures it aligns with the bottom of the text */
+    margin-left: 0.2em; /* Adjust as per your requirement, this creates a gap */
+}
 .icon
 {
     display:flex;
     justify-content: space-evenly;
     opacity:.8;
-    font-size: 8vw;
-    
+    font-size: 8vw;   
 }
-
 .icon:hover{
     opacity:1;
 }
@@ -59,35 +64,58 @@ html,body {
     max-width: 80vw;
     justify-content: center;
     align-items: center;
-    margin-bottom:2em;
+    margin: 1.5em;
+    
 }
-
 .links
 {
     display:flex;
     flex-direction: column;
-    gap:2em;
+    gap:1em; 
+    margin:2em; 
 }
 a
 {
     color: #EF6461;
     text-decoration: none;
     font-size:8vw;
-
 }
-.button{
-    display:flex;
-    padding:20px;
-    border:5px solid;
-    width:80vw;
-    height: 30px;
+.button {
+    display: flex;
+    padding: 10px; /* Increase horizontal padding, and maintain vertical padding */
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(5px); 
+    width: 85vw;/* It will take as much width as the content requires */
     opacity: .8;
+    justify-content: flex-start; 
     align-items: center;
-    justify-content: center;
-    
+    position: relative; 
+    font-size: 1.8rem; /* Adjust according to your needs. 1rem is just an example. */
 }
-.button:hover{
+.button:hover {
     opacity: 1;
+}
+.button-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 5px; 
+}
+.button-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* To keep rounded corners */
+}
+.button-text {
+    text-align: center;
+    padding: 0 3px; /* Just in case you want some space around the text inside its container */
+}
+.button-text {
+    flex-grow: 1; /* Allow it to take up remaining space */
+    text-align: center; /* Center-align the text within its space */
 }
 /* CSS for screens wider than 768px */
 @media (min-width: 768px) {
@@ -100,4 +128,9 @@ a
     .button {
         width: 50vw;
     }
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    color: #EF6461;
 }
