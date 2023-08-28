@@ -9,7 +9,38 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+    
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin:5vw;
+
+}
+.info ul {
+    list-style: disc;
+    line-height: 1.5em;
+    padding-left: 1em;  
+    gap: 8em;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+   
+}
+input[type="submit"] {
+    border-radius: 12px; /* Round edges */
+}
+
+input[type="submit"]:disabled {
+    background-color: #cccccc; /* Gray out when disabled */
+    cursor: not-allowed;
 }
 /* Default bullet style */
 ul {
