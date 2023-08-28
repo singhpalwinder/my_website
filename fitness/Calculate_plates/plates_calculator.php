@@ -50,16 +50,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
     <title>Weight Conversion & Denomination</title>
 </head>
 <body>
+    <div class="info">
+        <h3>This tool is created to get the weight you would like in lbs and give you an output:</h3><br>
+        <ul>
+            <li>The color of the plate acording to USAPL & IPF standards</li>
+            <li>The number of plates needed for each side for the specific color</li>
+        </ul>
+        <h5>Note* The tool does take into consideration the barbell weight. So the weight you enter should include the barbell weight of 45lbs.</h5>
+    </div>
+
     <form action="plates_calculator.php" method="post">
-        Enter weight in lbs: <input type="number" step="0.01" name="weight_in_lbs" autofocus>
-        <input type="submit" value="Calculate">
+        Enter weight in lbs: <input type="number" step="0.01" id="weight_input" name="weight_in_lbs" autofocus>
+        <input type="submit" id="calculate_button" value="Calculate" disabled>
     </form>
 
     <?php
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
 
-        echo "<h3>Given Weight(lbs): " . $results['weight_lbs'] . "lbs</h3>";
+        echo "<h3>Given Weight in lbs: " . $results['weight_lbs'] . "lbs</h3>";
         echo "<h3>Target weight in kg: " . $results['weight_kg'] . "kg</h3>";
 
         echo "<h4>Plates needed on each side:</h4>";
@@ -74,5 +83,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
         unset($_SESSION['results']);
     }
     ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const weightInput = document.getElementById("weight_input");
+            const calculateButton = document.getElementById("calculate_button");
+
+            weightInput.addEventListener("input", function() {
+            const weightValue = parseFloat(weightInput.value);
+            if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
+                calculateButton.disabled = true;
+            } else {
+                calculateButton.disabled = false;
+            }
+            });
+        });
+    </script>
 </body>
 </html>

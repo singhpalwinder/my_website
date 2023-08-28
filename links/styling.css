@@ -7,7 +7,10 @@ html,body {
     height:100%;
     margin:0;
 }
-
+body * {
+    color: white;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -17,14 +20,12 @@ html,body {
     width:100%;
     box-sizing: border-box;
     gap:3em;
-    color:#EF6461;
     font-size: .6em;
 }
 header{
     display: flex;
     flex-direction: column;
     align-items: center;  /* This will ensure the children (links and socials) are centered */
-    color: #EF6461;
     text-decoration: none;
     font-size:100%;
     gap:1.8em;
@@ -46,7 +47,8 @@ header img {
     display:flex;
     justify-content: space-evenly;
     opacity:.8;
-    font-size: 8vw;   
+    font-size: 8vw;  
+    gap: 1.5rem; 
 }
 .icon:hover{
     opacity:1;
@@ -54,8 +56,8 @@ header img {
 .socials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-gap: 8vw; 
-    max-width: 80vw;
+    grid-gap: 6vw; 
+    max-width: 60vw;
     justify-content: center;
     align-items: center;
     margin: 1.5em;
@@ -65,12 +67,13 @@ header img {
 {
     display:flex;
     flex-direction: column;
+    align-items: center;
     gap:2em; 
     margin:2em; 
+    width: 90vw;
 }
 a
 {
-    color: #EF6461;
     text-decoration: none;
     font-size:8vw;
 }
@@ -129,6 +132,9 @@ a
 }
 footer {
     display: flex;
-    flex-direction: row;
-    color: #EF6461;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin:2vw;
+    
 }
