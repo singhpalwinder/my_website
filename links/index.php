@@ -18,12 +18,12 @@
             </div>
           </header>
              <div class = "links">
-                <div>
-                  <a class = "button" href = "https://music.apple.com/us/playlist/multi-cultural-gym-hype/pl.u-yZyVJVxFqBY37a">
+             <div>
+                  <a class = "button" href = "../fitness/Calculate_plates/plates_calculator.php">
                     <div class="button-image">
-                      <img src="images/playlist_logo.png" alt="playlist_logo">
+                      <img src="images/plates_calculator.png" alt="free workout plan">
                     </div>
-                    <span class="button-text">Gym Playlist</span>
+                    <span class="button-text">Plates Calculator</span>
                   </a>
                 </div>
                 <div>
@@ -35,33 +35,37 @@
                   </a>
                 </div>
                 <div>
-                  <a class = "button" href = "../fitness/Calculate_plates/plates_calculator.php">
+                  <a class = "button" href = "https://music.apple.com/us/playlist/multi-cultural-gym-hype/pl.u-yZyVJVxFqBY37a">
                     <div class="button-image">
-                      <img src="images/plates_calculator.png" alt="free workout plan">
+                      <img src="images/playlist_logo.png" alt="playlist_logo">
                     </div>
-                    <span class="button-text">Plates Calculator</span>
+                    <span class="button-text">Gym Playlist</span>
                   </a>
                 </div>
             </div>
-            <footer class="socials">
+            <footer>
+               <div class = "icon">
+               <div>
+                  <a href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div >
+                  <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div >
+                  <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div >
+                  <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
+                </div>
+                <div>            
+                  <a href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
+                </div>
+               </div>
                 <div>
-                  <a class="icon" href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
+                  <h3>Self hosted by Palwinder Singh</h3>
                 </div>
-                <div class="icon">
-                  <a  href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="icon">
-                <a   href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="icon">
-                <a   href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="icon">            
-                  <a   href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
             </footer>
-            <div>
-              <h3>Self hosted by Palwinder Singh</h3>
-            </div>
+            
         </div>
     </body>
 </html>
