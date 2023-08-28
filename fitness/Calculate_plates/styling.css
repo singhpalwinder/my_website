@@ -45,11 +45,18 @@ input[type="number"]{
     opacity: 0.4;
     outline: none;
     transition: opacity 0.3s, border-color 0.3s;
+    -webkit-appearance: none; /* For Webkit browsers */
+    -moz-appearance: textfield; /* For Mozilla Firefox */
 
 }
 input[type="number"].active {
     opacity: 1;
     border-color: #2C697F;  /* Add the same border color as your submit button */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 input[type="submit"] {
     padding: 6px 30px; /* Increased size */
