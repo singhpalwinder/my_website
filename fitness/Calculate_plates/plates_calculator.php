@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
     </div>
 
     <form action="plates_calculator.php" method="post">
-        Enter weight in lbs: <input type="number" step="0.01" id="weight_input" name="weight_in_lbs" autofocus>
+        <input type="number" step="0.01" id="weight_input" name="weight_in_lbs" placeholder="Enter Weight in Lbs" autofocus>
         <input type="submit" id="calculate_button" value="Calculate" disabled>
     </form>
 
@@ -84,6 +84,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
     }
     ?>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const weightInput = document.getElementById("weight_input");
+            const calculateButton = document.getElementById("calculate_button");
+
+            // Add 'active' class as soon as the page loads due to autofocus
+            weightInput.classList.add("active"); 
+
+            weightInput.addEventListener("input", function() {
+                const weightValue = parseFloat(weightInput.value);
+                if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
+                    calculateButton.disabled = true;
+                } else {
+                    calculateButton.disabled = false;
+                }
+            });
+        });
         document.addEventListener('DOMContentLoaded', function() {
             const weightInput = document.getElementById("weight_input");
             const calculateButton = document.getElementById("calculate_button");
