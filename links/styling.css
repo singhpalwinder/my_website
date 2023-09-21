@@ -46,11 +46,13 @@ header img {
 {
     display:flex;
     justify-content: space-evenly;
-    opacity:.8;
     font-size: 8vw;  
     gap: 1.5rem; 
 }
-.icon:hover{
+.icon div{
+    opacity:.8;
+}
+.icon div:hover{
     opacity:1;
 }
 .socials {
@@ -93,7 +95,9 @@ a
     font-size: 1.8rem; /* Adjust according to your needs. 1rem is just an example. */
 }
 .button:hover {
-    box-shadow: 0px 10px 15px 0px rgba(255,255,255,0.7);  /* Add shadow on hover */
+    transform: scale(1.04);
+    transition: transform .3s ease;
+    box-shadow: 0px 10px 15px 10px rgba(255,255,255,0.7);  /* Add shadow on hover */
 }
 .button-image {
     width: 60px;
