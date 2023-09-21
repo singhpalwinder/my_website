@@ -44,28 +44,27 @@
                 </div>
             </div>
             <footer>
-               <div class = "icon">
-               <div>
-                  <a href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <div >
-                  <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div >
-                  <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div >
-                  <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
-                </div>
-                <div>            
-                  <a href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
-                </div>
+               <div class="icon">
+                  <div>
+                    <a href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+                  <div >
+                    <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <div >
+                    <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                  <div >
+                    <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div>            
+                    <a href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
+                  </div>
                </div>
-                <div>
+               <div>
                   <h3>Self hosted by Palwinder Singh</h3>
-                </div>
-            </footer>
-            
+               </div>
+            </footer> 
         </div>
     </body>
 </html>
