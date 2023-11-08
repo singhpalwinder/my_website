@@ -141,5 +141,34 @@ li.plate-1_25::before {
     font-size: 3em;
     vertical-align: middle;
 }
-
+.common-denominations {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.common-denominations-data h5 {
+    font-size: 18px;
+}
+.common-denominations-data{
+    height: 180px;
+    width:auto;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #2C697F; /* Border */
+    border-radius: 5px; /* Rounded edges */
+    text-align: center;
+    outline: none;
+    transition: opacity 0.3s, border-color 0.3s;
+    -webkit-appearance: none; /* For Webkit browsers */
+    -moz-appearance: textfield; /* For Mozilla Firefox */
+}
 

@@ -64,6 +64,56 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
         <input type="submit" id="calculate_button" value="Calculate" disabled>
     </form>
 
+    <div>
+    <h4 class="info">Common Plate Denominations:</h4>
+        <div class="common-denominations">
+            <div class="common-denominations-data">
+                <h5>135lbs or 61.23kg:</h5>
+                <ul>
+                    <li class='plate-20'>20kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>225lbs or 102.06kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 1</li>
+                    <li class="plate-15">15kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>315lbs or 142.88kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 2</li>
+                    <li class="plate-10">10kg plates: 1</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>405lbs or 183.70kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 3</li>
+                    <li class="plate-5">5kg plates: 1</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>495lbs or 224.53kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 4</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>585lbs or 265.35kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 4</li>
+                    <li class='plate-20'>20kg plates: 1</li>
+                    <li class="plate-2_5">2.5kg plates: 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <?php
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
