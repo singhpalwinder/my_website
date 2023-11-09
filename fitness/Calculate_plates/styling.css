@@ -167,5 +167,33 @@ li.plate-1_25::before {
     -webkit-appearance: none; /* For Webkit browsers */
     -moz-appearance: textfield; /* For Mozilla Firefox */
 }
+.result {
+    margin-top: 3.9rem;
+    overflow: hidden;
+    width: auto;
+    text-align: center; /* Centers inline-block elements within .result */
+    padding: 23px 27px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #2C697F;
+    border-radius: 5px;
+    outline: none;
+    transition: opacity 0.3s, border-color 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
 
+.result ul {
+    display: inline-block; /* Allows the ul to be centered */
+    text-align: start; /* Aligns the content to the start (left in LTR languages) */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin to help with centering */
+    list-style-position: inside; /* Places the bullet points inside the content flow */
+}
+
+.result li {
+    text-align: start; /* Ensures li content aligns to the start */
+    list-style-type: none; /* Adds bullet points */
+    display: list-item; /* Displays the element as a list item */
+}
 
