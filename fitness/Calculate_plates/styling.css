@@ -5,7 +5,7 @@ html,body {
     background-color: #122D39;
     color: white;
     height:100%;
-    margin:0;
+    margin:1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,6 @@ html,body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:5vw;
 
 }
 .info ul {
@@ -157,18 +156,16 @@ li.plate-1_25::before {
 .common-denominations-data{
     height: 180px;
     width:auto;
-    justify-content: center;
-    text-align: center;
+    text-align: start;
     padding: 10px 15px;
     font-size: 16px;
-    color: white; /* Text color */
     background-color: transparent; /* Transparent background */
     border: 2px solid #2C697F; /* Border */
     border-radius: 5px; /* Rounded edges */
-    text-align: center;
     outline: none;
     transition: opacity 0.3s, border-color 0.3s;
     -webkit-appearance: none; /* For Webkit browsers */
     -moz-appearance: textfield; /* For Mozilla Firefox */
 }
+
 

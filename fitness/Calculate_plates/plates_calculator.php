@@ -51,10 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
 </head>
 <body>
     <div class="info">
-        <h3>This tool is created to get the weight you would like in lbs and give you an output:</h3><br>
+        <h3>This tool is created to get the weight you would like to lift in lbs and give you an output that has:</h3><br>
         <ul>
             <li>The color of the plate acording to USAPL & IPF standards</li>
-            <li>The number of plates needed for each side for the specific color</li>
+            <li>The number of plates needed on each side for the specific color</li>
         </ul>
         <h5>Note* The tool does take into consideration the barbell weight. So the weight you enter should include the barbell weight of 45lbs.</h5>
     </div>
@@ -64,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
         <input type="submit" id="calculate_button" value="Calculate" disabled>
     </form>
 
+  <?php if (!isset($_SESSION['results'])): ?>
     <div>
     <h4 class="info">Common Plate Denominations:</h4>
         <div class="common-denominations">
@@ -113,7 +114,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
             </div>
         </div>
     </div>
-
+  <?php endif; ?>
+   
     <?php
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
