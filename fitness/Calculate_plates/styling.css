@@ -5,7 +5,7 @@ html,body {
     background-color: #122D39;
     color: white;
     height:100%;
-    margin:0;
+    margin:1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,6 @@ html,body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:5vw;
 
 }
 .info ul {
@@ -141,5 +140,60 @@ li.plate-1_25::before {
     font-size: 3em;
     vertical-align: middle;
 }
+.common-denominations {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.common-denominations-data h5 {
+    font-size: 18px;
+}
+.common-denominations-data{
+    height: 180px;
+    width:auto;
+    text-align: start;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #2C697F; /* Border */
+    border-radius: 5px; /* Rounded edges */
+    outline: none;
+    transition: opacity 0.3s, border-color 0.3s;
+    -webkit-appearance: none; /* For Webkit browsers */
+    -moz-appearance: textfield; /* For Mozilla Firefox */
+}
+.result {
+    margin-top: 3.9rem;
+    overflow: hidden;
+    width: auto;
+    text-align: center; /* Centers inline-block elements within .result */
+    padding: 23px 27px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #2C697F;
+    border-radius: 5px;
+    outline: none;
+    transition: opacity 0.3s, border-color 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
 
+.result ul {
+    display: inline-block; /* Allows the ul to be centered */
+    text-align: start; /* Aligns the content to the start (left in LTR languages) */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin to help with centering */
+    list-style-position: inside; /* Places the bullet points inside the content flow */
+}
+
+.result li {
+    text-align: start; /* Ensures li content aligns to the start */
+    list-style-type: none; /* Adds bullet points */
+    display: list-item; /* Displays the element as a list item */
+}
 
