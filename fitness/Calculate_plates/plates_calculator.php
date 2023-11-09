@@ -120,8 +120,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
 
-        echo "<h3>Given Weight in lbs: " . $results['weight_lbs'] . "lbs</h3>";
-        echo "<h3>Target weight in kg: " . $results['weight_kg'] . "kg</h3>";
+       echo "<div class='result'>";
+       echo "<h3>Given Weight: " . $results['weight_lbs'] . "lbs</h3>";
+        echo "<h3>Target weight: " . $results['weight_kg'] . "kg</h3>";
 
         echo "<h4>Plates needed on each side:</h4>";
         echo "<ul>";
@@ -130,41 +131,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
             echo "<li class='" . $class_name . "'>" . floatval($plate) . " kg plates: $count</li>";
         }
         echo "</ul>";
+       echo "</div>";
 
         // Clear the session data
         unset($_SESSION['results']);
     }
     ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const weightInput = document.getElementById("weight_input");
-            const calculateButton = document.getElementById("calculate_button");
+    document.addEventListener('DOMContentLoaded', function() {
+        const weightInput = document.getElementById("weight_input");
+        const calculateButton = document.getElementById("calculate_button");
 
-            // Add 'active' class as soon as the page loads due to autofocus
-            weightInput.classList.add("active"); 
+        // Add 'active' class as soon as the page loads due to autofocus
+        weightInput.classList.add("active");
 
-            weightInput.addEventListener("input", function() {
-                const weightValue = parseFloat(weightInput.value);
-                if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
-                    calculateButton.disabled = true;
-                } else {
-                    calculateButton.disabled = false;
-                }
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            const weightInput = document.getElementById("weight_input");
-            const calculateButton = document.getElementById("calculate_button");
-
-            weightInput.addEventListener("input", function() {
+        weightInput.addEventListener("input", function() {
             const weightValue = parseFloat(weightInput.value);
-            if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
-                calculateButton.disabled = true;
-            } else {
-                calculateButton.disabled = false;
-            }
-            });
+            calculateButton.disabled = isNaN(weightValue) || weightValue <= 0 || weightValue > 2000;
         });
-    </script>
+    });
+</script>
 </body>
 </html>
