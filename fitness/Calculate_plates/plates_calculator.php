@@ -51,10 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
 </head>
 <body>
     <div class="info">
-        <h3>This tool is created to get the weight you would like in lbs and give you an output:</h3><br>
+        <h3>This tool is created to get the weight you would like to lift in lbs and give you an output that has:</h3><br>
         <ul>
             <li>The color of the plate acording to USAPL & IPF standards</li>
-            <li>The number of plates needed for each side for the specific color</li>
+            <li>The number of plates needed on each side for the specific color</li>
         </ul>
         <h5>Note* The tool does take into consideration the barbell weight. So the weight you enter should include the barbell weight of 45lbs.</h5>
     </div>
@@ -64,12 +64,65 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
         <input type="submit" id="calculate_button" value="Calculate" disabled>
     </form>
 
+  <?php if (!isset($_SESSION['results'])): ?>
+    <div>
+    <h4 class="info">Common Plate Denominations:</h4>
+        <div class="common-denominations">
+            <div class="common-denominations-data">
+                <h5>135lbs or 61.23kg:</h5>
+                <ul>
+                    <li class='plate-20'>20kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>225lbs or 102.06kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 1</li>
+                    <li class="plate-15">15kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>315lbs or 142.88kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 2</li>
+                    <li class="plate-10">10kg plates: 1</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>405lbs or 183.70kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 3</li>
+                    <li class="plate-5">5kg plates: 1</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>495lbs or 224.53kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 4</li>
+                    <li class="plate-1_25">1.25kg plates: 1</li>
+                </ul>
+            </div>
+            <div class="common-denominations-data">
+                <h5>585lbs or 265.35kg:</h5>
+                <ul>
+                    <li class='plate-25'>25kg plates: 4</li>
+                    <li class='plate-20'>20kg plates: 1</li>
+                    <li class="plate-2_5">2.5kg plates: 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <?php endif; ?>
+   
     <?php
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
 
-        echo "<h3>Given Weight in lbs: " . $results['weight_lbs'] . "lbs</h3>";
-        echo "<h3>Target weight in kg: " . $results['weight_kg'] . "kg</h3>";
+       echo "<div class='result'>";
+       echo "<h3>Given Weight: " . $results['weight_lbs'] . "lbs</h3>";
+        echo "<h3>Target weight: " . $results['weight_kg'] . "kg</h3>";
 
         echo "<h4>Plates needed on each side:</h4>";
         echo "<ul>";
@@ -78,41 +131,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
             echo "<li class='" . $class_name . "'>" . floatval($plate) . " kg plates: $count</li>";
         }
         echo "</ul>";
+       echo "</div>";
 
         // Clear the session data
         unset($_SESSION['results']);
     }
     ?>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const weightInput = document.getElementById("weight_input");
-            const calculateButton = document.getElementById("calculate_button");
+    document.addEventListener('DOMContentLoaded', function() {
+        const weightInput = document.getElementById("weight_input");
+        const calculateButton = document.getElementById("calculate_button");
 
-            // Add 'active' class as soon as the page loads due to autofocus
-            weightInput.classList.add("active"); 
+        // Add 'active' class as soon as the page loads due to autofocus
+        weightInput.classList.add("active");
 
-            weightInput.addEventListener("input", function() {
-                const weightValue = parseFloat(weightInput.value);
-                if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
-                    calculateButton.disabled = true;
-                } else {
-                    calculateButton.disabled = false;
-                }
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            const weightInput = document.getElementById("weight_input");
-            const calculateButton = document.getElementById("calculate_button");
-
-            weightInput.addEventListener("input", function() {
+        weightInput.addEventListener("input", function() {
             const weightValue = parseFloat(weightInput.value);
-            if (isNaN(weightValue) || weightValue <= 0 || weightValue > 2000) {
-                calculateButton.disabled = true;
-            } else {
-                calculateButton.disabled = false;
-            }
-            });
+            calculateButton.disabled = isNaN(weightValue) || weightValue <= 0 || weightValue > 2000;
         });
-    </script>
+    });
+</script>
 </body>
 </html>
