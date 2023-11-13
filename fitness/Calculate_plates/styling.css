@@ -3,14 +3,14 @@ html,body {
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #122D39;
-    color: white;
     height:100%;
     margin:1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-    
+}
+body * {
+    color: white;
 }
 .info{
     display:flex;
@@ -196,4 +196,30 @@ li.plate-1_25::before {
     list-style-type: none; /* Adds bullet points */
     display: list-item; /* Displays the element as a list item */
 }
-
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin:4.5vw;
+}
+.icon
+{
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 6vw;  
+    gap: 1.5rem; 
+}
+.icon div{
+    opacity:.8;
+}
+.icon div:hover{
+    opacity:1;
+}
+@media (min-width: 768px) {
+    .icon {
+        font-size: 5vw;  
+    }
+    
+}
