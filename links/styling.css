@@ -13,6 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow:scroll;
+    margin-top: 2.2rem;
 }
 body * {
     color: white;
@@ -24,19 +25,15 @@ header{
     flex-direction: column;
     align-items: center;  /* This will ensure the children (links and socials) are centered */
     text-decoration: none;
-    gap:1.8em;
-}
+    gap:1.8em;}
 header img {
     display:block;
-    margin-left: auto;
-    margin-right:auto;
-    width:160px;
-    height:160px;
+    width:120px;
+    height:auto;
     border-radius: 50%;
 }
-.material-symbols-outlined {
-    vertical-align: baseline; /* This ensures it aligns with the bottom of the text */
-    margin-left: 0.2em; /* Adjust as per your requirement, this creates a gap */
+header a {
+    font-size: 1.2rem;
 }
 .icon
 {
