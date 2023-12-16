@@ -130,4 +130,4 @@ dmypy.json
 
 #custom
 *.jpeg
-.DS_Store
+*.DS_Store
