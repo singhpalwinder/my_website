@@ -1,16 +1,15 @@
-html,body {
+html * {
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-color: #122D39;
-    height:100%;
-    margin:1.5vw;
-    display: flex;
+    color: white;
+}
+body {
+    margin:2.5vw;
+    overflow:auto;
+    height:auto;
+    display:flex;
     flex-direction: column;
     align-items: center;
-}
-body * {
-    color: white;
 }
 .info{
     display:flex;
@@ -169,8 +168,8 @@ li.plate-1_25::before {
 }
 .result {
     margin-top: 3.9rem;
-    overflow: hidden;
     width: auto;
+    height:auto;
     text-align: center; /* Centers inline-block elements within .result */
     padding: 23px 27px;
     font-size: 16px;
