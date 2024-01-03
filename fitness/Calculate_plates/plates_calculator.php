@@ -115,27 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
             </div>
         </div>
     </div>
-  <?php endif; ?>
-  <footer>
-               <div class="icon">
-                  <div>
-                    <a href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
-                  </div>
-                  <div >
-                    <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                  <div >
-                    <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </div>
-                  <div >
-                    <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
-                  </div>
-                  <div>            
-                    <a href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
-                  </div>
-               </div>
-    </footer>
-   
+  <?php endif; ?>   
     <?php
     if (isset($_SESSION['results'])) {
         $results = $_SESSION['results'];
@@ -157,6 +137,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['weight_in_lbs'])) {
         unset($_SESSION['results']);
     }
     ?>
+    <footer>
+               <div class="icon">
+                  <div>
+                    <a href="https://www.twitter.com/_singhpalwinder"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+                  <div >
+                    <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <div >
+                    <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                  <div >
+                    <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div>            
+                    <a href="https://www.tiktok.com/@_singhpalwinder"><i class = "fa-brands fa-tiktok"></i></a>
+                  </div>
+               </div>
+    </footer>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const weightInput = document.getElementById("weight_input");
