@@ -1,18 +1,20 @@
 html{
     background-image: url('images/background_image.png');
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /*keep the background image locked in place*/
     background-color: #313638;
     height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow:hidden;
 }
 body{
     display: flex;
+    min-height: 100vh;
+    position:relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow:scroll;
+    overflow:auto;
     margin-top: 2.2rem;
 }
 body * {
@@ -86,24 +88,6 @@ a
     position: relative; 
     border-radius: 10px;
     font-size: 1.8rem; /* Adjust according to your needs. 1rem is just an example. */
-}
-.youtube-button {
-    display: flex;
-    padding: 10px; /* Increase horizontal padding, and maintain vertical padding */
-    border: none; 
-    width: 85vw;/* It will take as much width as the content requires */
-    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
-    justify-content: flex-start; 
-    align-items: center;
-    position: relative; 
-    border-radius: 10px;
-    font-size: 1.8rem; /* Adjust according to your needs. 1rem is just an example. */
-}
-.youtube-button iframe {
-    border-radius: 10px;
-    width:100%;
-    height:auto;
-    height: 300px;
 }
 .button:hover {
     transform: scale(1.04);
