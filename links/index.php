@@ -52,7 +52,7 @@
                     <a href ="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
                   </div>
                   <div >
-                    <a href="https://www.linkedin.com/in/palwinder-singh-432559218"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/singhpalwinder1/"><i class="fa-brands fa-linkedin-in"></i></a>
                   </div>
                   <div >
                     <a href="https://www.instagram.com/_singhpalwinder"><i class = "fa-brands fa-instagram"></i></a>
