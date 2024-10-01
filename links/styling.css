@@ -1,39 +1,38 @@
+html {
+    background-color: rgb(10,14,8);
+}
 html, body {
     height: 100%;
     margin: 0;
     overflow: hidden; /* Prevent scrolling on the root level */
+    }
+.background{
+    background-image: url('images/dark_leaves_portrait.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100%;
+    background-color: rgb(10,14,8);
+    filter: blur(1px) saturate(100%) brightness(50%);
+    z-index: -1;
+    position:fixed;
 }
-body {
+.content{
     display: flex;
     height: 100%;
     width:auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto; /* Allows body content to scroll */
+    overflow: auto; 
     margin-top: 2.2rem;
-}
-body::before {
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/dark_leaves_portrait.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #313638;
-    filter: blur(1px) saturate(100%) brightness(30%);
-    background-position: 45% center; /* Adjusted to move the background image to the left */
-    z-index: -1; /* Place behind all other content */
-    pointer-events: none; /* Ensure it doesn’t interfere with interactions on body content */
+    z-index: 999;
+    position:relative;
 }
 body * {
     color: white;
     text-shadow: 0.5px 0 0 black, -0.5px 0 0 black, 0 0.5px 0 black, 0 -0.5px 0 black, 0.5px 0.5px black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
 }
-
 header{
     display: flex;
     flex-direction: column;
@@ -56,10 +55,10 @@ header a {
     font-size: 8vw;  
     gap: 1.5rem; 
 }
-.icon div{
+.icon a{
     opacity:.8;
 }
-.icon div:hover{
+.icon a:hover{
     opacity:1;
 }
 .socials {
