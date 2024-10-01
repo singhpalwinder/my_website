@@ -5,8 +5,8 @@ html, body {
 }
 body {
     display: flex;
-    min-height: 100vh;
-    position: relative; /* Establish a positioning context for the pseudo-element */
+    height: 100%;
+    width:auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
