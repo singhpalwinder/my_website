@@ -12,12 +12,8 @@
 
     <div class="content"> <!-- Content layer -->
       <header>
-        <div>
           <img src="pfp.png" alt="Profile picture">
-        </div>
-        <div>
           <a href="https://www.singhpalwinder.com/">@_singhpalwinder</a>
-        </div>
       </header>
 
       <div class="links">
