@@ -13,7 +13,6 @@
           <img src="pfp.png" alt="Profile picture">
           <a href="https://www.singhpalwinder.com/">@_singhpalwinder</a>
       </header>
-
       <div class="links">
           <a class="button" href="./fitness/Calculate_plates/plates_calculator.php">
               <img src="images/plates_calculator.png" alt="Plates Calculator">
@@ -28,7 +27,6 @@
             <span class="button-text">Gym Playlist</span>
           </a>
       </div>
-
       <footer>
         <div class="icon">
           <a href="https://github.com/singhpalwinder"><i class="fa-brands fa-github"></i></a>
