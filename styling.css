@@ -1,36 +1,40 @@
 :root {
     --background-color: rgb(10,14,8); 
     --theme-dark-hover-color: rgba(255, 255, 255, 0.6);
-    --background-image: url('images/dark_leaves_portrait.jpeg');
+    --background-image: url('/images/dark_leaves_portrait.jpeg');
 }
 html {
-    min-height: 100vh;
-    min-width: 100vw;
+    display: flex;
+   min-height: 100vh;
+   min-width: 100vw;
     background-image: var(--background-image);
     background-color: var(--background-color);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: fixed;
     margin: 0;
     padding: 0;
 }
 body {
-    min-height: 100vh;
+   min-height: 100vh;
     min-width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 15px;
+    padding: 0;
     z-index: 10;
     backdrop-filter: blur(2px) saturate(100%) brightness(70%); 
+    overflow: auto;
+    overflow-x: hidden;
+    gap: 70px;
 }
 
 body * {
+    font-family: "copperplate", "Arial";
     color: white;
     text-shadow: 0.5px 0 0 black, -0.5px 0 0 black, 0 0.5px 0 black, 0 -0.5px 0 black, 0.5px 0.5px black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
 }
@@ -40,6 +44,7 @@ header{
     align-items: center;  /* This will ensure the children (links and socials) are centered */
     text-decoration: none;
     gap:1.8em;
+    margin: 10px
 }
 header img {
     display:block;
@@ -70,6 +75,7 @@ header a {
     align-items: center;
     justify-content: center;
     gap:2em; 
+    margin: 10px;
 }
 a
 {
@@ -148,4 +154,5 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;    
+    margin: 10px;
 }
