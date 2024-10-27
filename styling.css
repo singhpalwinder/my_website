@@ -37,6 +37,15 @@ body * {
     font-family: "copperplate", "Arial";
     color: white;
     text-shadow: 0.5px 0 0 black, -0.5px 0 0 black, 0 0.5px 0 black, 0 -0.5px 0 black, 0.5px 0.5px black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 0;
 }
 header{
     display: flex;
@@ -51,6 +60,7 @@ header img {
     width:120px;
     height:auto;
     border-radius: 50%;
+    border: 1px solid white;
 }
 header a {
     font-size: 1.2rem;
@@ -61,12 +71,18 @@ header a {
     justify-content: space-evenly;
     font-size: 5vw;  
     gap: 1.5rem; 
+    padding: 5px;
 }
 .icon a{
     opacity:.8;
+    padding: 5px;
+}
+.icon i {
+    padding: 5px;
 }
 .icon a:hover{
     opacity:1;
+    
 }
 .links
 {
@@ -125,6 +141,13 @@ a img {
     flex-grow: 1; /* Allow it to take up remaining space */
     text-align: center; /* Center-align the text within its space */
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;    
+    margin: 10px;
+}
 /* CSS for screens smaller than 768px */
 @media (max-width: 1200px) {
     a {
@@ -143,16 +166,6 @@ a img {
         width: 90px;
     }
     .content {
-        padding: .8rem;
+        padding: 60px;
     }
-    footer {
-        padding-bottom: 60px; /*padding on iphone safari*/
-    }
-}
-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;    
-    margin: 10px;
 }
